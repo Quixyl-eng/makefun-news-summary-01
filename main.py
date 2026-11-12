@@ -2,8 +2,8 @@
 """Copy the baked 11 November 2026 summary to the judge.
 
 The sandbox has no network, so the reporting was checked against the Associated
-Press, Al Jazeera, Reuters, Anadolu, Xinhua and the Kyiv Independent, then
-committed as summary.txt. Each item names the outlet that reported it.
+Press, Al Jazeera, Reuters, AFP and the Kyiv Independent, then
+committed as summary.txt. Each story names the outlet that reported it.
 Two runs write the same bytes, and the copy is checked. Python 3.13 standard library only.
 The judge reads entry.txt and nothing else.
 """
