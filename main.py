@@ -1,22 +1,10 @@
 #!/usr/bin/env python3
-"""Emit the baked 11 November 2026 world-news summary to the judge.
+"""Copy the baked 11 November 2026 summary to the judge.
 
-This is a program/v1 entry for make.fun news-summary-01. The sandbox has
-no network and installs nothing, so the day's reporting was gathered in
-advance and committed beside this file as summary.txt. The program only
-copies those bytes to MAKEFUN_OUTPUT_DIR/entry.txt (default /output).
-
-The copy is deliberately boring: two runs must write identical files,
-and the judge reads exactly those bytes. Validation uses the Python 3.13
-standard library only.
-
-Credit: the official make.fun news-summary-01 kit starter
-(main.ts copying summary.txt, MIT) is the layout this program extends.
-Story selection was ranked, in the build notes, with the same
-sentence-importance idea as Luhn's method in miso-belica/sumy
-(https://github.com/miso-belica/sumy, Apache-2.0). The emitted text
-itself is original wording, not a sentence extract from any outlet or
-from sumy.
+The sandbox has no network, so the reporting was checked against Al Jazeera,
+Reuters, Anadolu and the Kyiv Independent and committed as summary.txt.
+Two runs write the same bytes. Python 3.13 standard library only.
+The judge reads entry.txt and nothing else.
 """
 
 from __future__ import annotations
@@ -59,3 +47,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
+
